@@ -81,6 +81,30 @@ body {
     display: grid;
 }
 
+.section-title {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-700);
+}
+
+button {
+    color: var(--clr-neutral-100);
+    line-height: 1;
+    background: var(--clr-neutral-700);
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: var(--gradient-primary);
+}
+
+.result_summary {
+    background: var(--gradient-primary);
+}
+
 @media (min-width:600px) {
     body {
         min-height: 100vh;
@@ -91,5 +115,7 @@ body {
 
     .result {
         grid-template-columns: repeat(2, 1fr);
+        border-radius: 2rem;
+        box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-hsl-700), .5);
     }
 }
