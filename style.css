@@ -107,7 +107,7 @@ button:focus {
 
 .result_summary {
 
-    padding: var(--padding);
+    padding: var(--padding) calc(var(--padding)*1.25);
     color: hsl(var(--clr-neutral-hsl-100), .75);
     background: var(--gradient-primary);
     text-align: center;
@@ -189,6 +189,15 @@ button:focus {
 
 }
 
+.summary_title {
+    font-weight: var(--fw-bold);
+    color: hsl(var(--item-color));
+}
+
+.summary_score {
+    font-weight: var(--fw-bold);
+
+}
 
 /* Media query */
 
