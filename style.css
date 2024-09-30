@@ -77,6 +77,8 @@ body {
 }
 
 .result {
+    --border-radius: 2rem;
+    --padding: 2.5rem;
     max-width: 46rem;
     display: grid;
 }
@@ -103,10 +105,22 @@ button:focus {
 
 .result_summary {
 
-
+    padding: var(--padding);
+    color: hsl(var(--clr-neutral-hsl-100), .75);
     background: var(--gradient-primary);
     text-align: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
+
+.summary {
+
+    padding: var(--padding);
+}
+
+
+/* Media query */
+
+
 
 @media (min-width:600px) {
     body {
@@ -118,9 +132,16 @@ button:focus {
 
     .result {
         grid-template-columns: repeat(2, 1fr);
+        border-radius: var(--border-radius);
 
-        border-radius: 2rem;
+
         overflow: hidden;
         box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-hsl-700), .5);
     }
+
+    .result_summary {
+        border-radius: var(--border-radius);
+    }
+
+
 }
